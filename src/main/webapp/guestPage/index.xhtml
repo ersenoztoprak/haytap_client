@@ -1,0 +1,25 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="templates/template.xhtml">
+	<ui:define name="metadata">
+	</ui:define>
+	<ui:define name="content">
+		<p:dataTable value="#{customerController.customers}" var="customer">
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="Name"></h:outputText>
+				</f:facet>
+				<h:outputText value="#{customer.name}"></h:outputText>
+			</p:column>
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="Age"></h:outputText>
+				</f:facet>
+				<h:outputText value="#{customer.age}"></h:outputText>
+			</p:column>
+		</p:dataTable>
+	</ui:define>
+</ui:composition>
