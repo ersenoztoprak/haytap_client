@@ -21,13 +21,13 @@ public class LoginController {
 	
 	public void register ()
 	{
-		System.out.println("kayit");
+		
 	}
 	
 	public void login()  
 	{
 
-        System.out.println("Login Metoduna Girildi");
+    
         try {
 
             ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
@@ -40,10 +40,7 @@ public class LoginController {
             Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
 
         } 
-        /*finally {
-            return null;
-        }*/
-        System.out.println("Login Metodundan Çıkıldı");
+
     }
 	
 	public void authorizedUserControl(){

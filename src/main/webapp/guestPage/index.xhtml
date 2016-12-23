@@ -7,18 +7,18 @@
 	<ui:define name="metadata">
 	</ui:define>
 	<ui:define name="content">
-		<p:dataTable value="#{customerController.customers}" var="customer">
+		<p:dataTable value="#{userController.users}" var="user">
 			<p:column>
 				<f:facet name="header">
 					<h:outputText value="Name"></h:outputText>
 				</f:facet>
-				<h:outputText value="#{customer.name}"></h:outputText>
+				<h:outputText value="#{user.name}"></h:outputText>
 			</p:column>
 			<p:column>
 				<f:facet name="header">
-					<h:outputText value="Age"></h:outputText>
+					<h:outputText value="Surname"></h:outputText>
 				</f:facet>
-				<h:outputText value="#{customer.age}"></h:outputText>
+				<h:outputText value="#{user.surname}"></h:outputText>
 			</p:column>
 		</p:dataTable>
 	</ui:define>
